@@ -1,123 +1,84 @@
-# [<img src="http://i.imgur.com/ihzCgEr.png">](http://concisecss.com/)
+# [Skeleton-Sass](http://getskeleton.com)
 
-[![Bower version](https://badge.fury.io/bo/concise.svg)](http://badge.fury.io/bo/concise) [![npm version](https://badge.fury.io/js/concise.css.svg)](https://badge.fury.io/js/concise.css)
+Skeleton-Sass is the (un)official Sass version of [Dave Gamache's](https://twitter.com/dhg) Skeleton Framework. It currently featues a stable version of Skeleton 2.0.4
 
-Concise CSS is a lightweight CSS framework that provides a number of great features without the bloat.
+-----
 
-Concise CSS provides a solid foundation to stylize your website. It offers an alternative to frameworks like Bootstrap and Foundation, with the difference that Concise only includes the minimum styles required. That does not mean that the features are limited; is possible to use add-ons on top of the core to extend the functionality as required.
+Skeleton is a simple, responsive boilerplate to kickstart any responsive project.
 
-The core of the framework only includes styles for native HTML elements. Components and utilities are provided as optional add-ons, Concise UI and Concise Utils, respectively.
+Check out <http://getskeleton.com> for documentation and details.
 
-Concise CSS is written using a custom CSS preprocessor, built on top of Sass and some PostCSS plugins; this means that you can still write Sass code as usual, but you can also enjoy of other custom features, like the `lh` unit provided to handle vertical rhythm.
+## Getting started
 
-## Installation
+### Install Global Dependancies
+  * [Node.js](http://nodejs.org)
+  * [bower](http://bower.io): `[sudo] npm install bower -g`
+  * [grunt.js](http://gruntjs.com): `[sudo] npm install -g grunt-cli`
 
-There are 3 different options to install Concise CSS in your website, although the recommended way is to use NPM.
+### Install Local Dependancies
+  * [Download zip](https://github.com/whatsnewsaes/Skeleton-Sass/archive/master.zip), [clone the repo](github-mac://openRepo/https://github.com/whatsnewsaes/Skeleton-Sass) or `bower install skeleton-scss` from your terminal
+  * cd to project folder
+  * run `[sudo] npm install` (first time users)
+  * run `grunt` (to watch and compile sass files)
 
-### Using our CDN
+### What's in the download?
 
-If you just want to try Concise CSS or of you do not have plans to customize the styles, you can use our CDN, this is the easier way to get started with the framework—and if you like it—is recommended to switch to NPM so that you can customize the styles.
-
-
-```HTML
-<!-- Normal - Latest version -->
-<link rel="stylesheet" href="https://cdn.concisecss.com/concise.css">
-
-<!-- Minified - Latest version -->
-<link rel="stylesheet" href="https://cdn.concisecss.com/concise.min.css">
-```
-
-That is for the latest version, if you want to use a specific one you can do something like the following:
-
-```HTML
-<!-- Normal - Specific version -->
-<link rel="stylesheet" href="https://cdn.concisecss.com/v4.0.0/concise.css">
-
-<!-- Minified - Specific version -->
-<link rel="stylesheet" href="https://cdn.concisecss.com/v4.0.0/concise.min.css">
-```
-
-### Install with NPM
-
-Execute the following command to install Concise CSS from NPM. If you are new to NPM, you can check their [documentation](https://docs.npmjs.com/).
+The download includes Skeleton's CSS, ~~Normalize CSS as a reset,~~ a sample favicon, and an index.html as a starting point.
 
 ```
-npm install concise.css
-```
-
-Then you can include the main file inside your project:
-
-```scss
-//
-// myStyles.scss
-// ---------
-
-// Concise Core
-@import "node_modules/concise.css/concise";
-```
-
-### Copy the source files
-
-Finally, if you prefer, you can just copy the framework files to your project folder.
-You can download the latest version from Github from [this link](https://github.com/ConciseCSS/concise.css/archive/master.zip), and place the files wherever you need them.
-
-## Building the source files
-
-To build the source files, you need to install the Concise CLI globally (locally if you compile the files with an NPM script):
+skeleton/
+├── index.html
+├── scss/
+│   └── skeleton.scss
+├── images/
+│   └── favicon.png
+├── package.json
+├── Gruntfile.js
+└── README.md
 
 ```
-npm install -g concise-cli
-```
 
-Once it is installed, you can compile source files with the `concisecss compile` command:
+### Contributions
+The goal of Skeleton-Sass is to have a mirrored Sass repository of Skeleton. In order to keep the integrity of the original Skeleton framework, I cannot accept any features or functionality outside the original implementation of [Dave Gamache's](https://twitter.com/dhg) [Skeleton Framework](https://github.com/dhg/Skeleton). If you would like to see features, functionality, or extensions outside of the original please make a PR / or issue on the original skeleton framework.
 
-```
-concisecss compile input.scss output.css
-```
+If you have sass improvements, additional mixins, or other helpful sass techniques that stay within the original codebase. Feel free to make a pull request!
 
-**Note**: When compiling the source code with the Concise CLI, Autoprefixer will automatically add the required browser prefixes for the last two browser versions.
+### Why it's awesome
 
-### Changelog
+Skeleton is lightweight and simple. It styles only raw HTML elements (with a few exceptions) and provides a responsive grid. Nothing more.
+- Minified, it's less than a kb
+- It's a starting point, not a UI framework
+- ~~No compiling or installing...just vanilla CSS~~
 
-You can keep up-to-date with the changes that we have made via our [releases page](https://github.com/ConciseCSS/concise.css/releases).
 
-### Specific Questions
+## Browser support
 
-** *Thanks to [thoughtbot](http://robots.thoughtbot.com/moving-open-source-project-mailing-lists-to-stack-overflow) for this great way to handling questions for an open source project.*
+- Chrome latest
+- Firefox latest
+- Opera latest
+- Safari latest
+- IE latest
 
-In lieu of a mailing list, we are going to manage all specific questions through [Stack Overflow](http://stackoverflow.com/).
+The above list is non-exhaustive. Skeleton works perfectly with almost all older versions of the browsers above, though IE certainly has large degradation prior to IE9.
 
-Members of the Concise team are subscribed to specific tags via [Stack Exchange Filters](http://stackexchange.com/filters), so that if a question is properly tagged, we can respond in a timely manner and help.
-
-**Which tags?**
-
-Ideally, we would like to keep it to just one tag for Concise questions, but we are subscribed to multiple variants to make sure nothing passes by us. However, for everybody asking a question, please use:
-
-- [Concise](http://stackoverflow.com/questions/tagged/concise)
-
-**Where do I post this?**
-
-There are lots of different things that people will want to post regarding the Concise framework. Here is a rough outline of where you should post any given issue, question or contribution:
-
-- Use [Stack Overflow](http://stackoverflow.com) if you **need help**
-- Use [GitHub Issues](http://github.com/ConciseCSS/concise.css/issues) if you **found a bug**
-- Use [GitHub Issues](http://github.com/ConciseCSS/concise.css/issues) if you **have an idea**
-- Use [GitHub Issues](http://github.com/ConciseCSS/concise.css/issues) if you want to **ask a question**
-- Submit a [pull request](https://help.github.com/articles/creating-a-pull-request) if you **want to contribute**
-
-## Contributing
-
-If you wish to contribute to the Concise CSS project, please read through our [contributing guidelines](https://github.com/ConciseCSS/concise.css/blob/master/CONTRIBUTING.md) first and then help however you’d like!
-
-## Versioning
-
-Concise is currently maintained under the [Semantic Versioning guidelines](http://semver.org/).
-
-## Elsewhere
-
-[![Like Concise on Facebook](http://i.imgur.com/4dy5UUK.png)](https://facebook.com/ConciseCSS)
-[![Follow Concise on Twitter](http://i.imgur.com/4AkKsMx.png)](https://twitter.com/ConciseCSS)
 
 ## License
 
-Code released under the [MIT license](https://github.com/ConciseCSS/concise.css/blob/master/LICENSE). Documentation released under [Creative Commons](http://creativecommons.org/licenses/by-sa/4.0/).
+All parts of Skeleton-sass are free to use and abuse under the [open-source MIT license](http://opensource.org/licenses/mit-license.php).
+
+
+## Colophon
+
+Skeleton was built using [Sublime Text 3](http://www.sublimetext.com/3) and designed with [Sketch](http://bohemiancoding.com/sketch). The typeface [Raleway](http://www.google.com/fonts/specimen/Raleway) was created by [Matt McInerney](http://matt.cc/) and [Pablo Impallari](http://www.impallari.com/). Code highlighting by Google's [Prettify library](https://code.google.com/p/google-code-prettify/). Icons in the header of the documentation are all derivative work of icons from [The Noun Project](thenounproject.com). [Feather](http://thenounproject.com/term/feather/22073) by Zach VanDeHey, [Pen](http://thenounproject.com/term/pen/21163) (with cap) by Ed Harrison, [Pen](http://thenounproject.com/term/pen/32847) (with clicker) by Matthew Hall, and [Watch](http://thenounproject.com/term/watch/48015) by Julien Deveaux.
+
+
+## Acknowledgement
+
+Skeleton was created by [Dave Gamache](https://twitter.com/dhg) for a better web.
+
+Skeleton-Sass was created by [Seth Coelen](http://sethcoelen.com) for a better Skeleton.
+
+<a href='https://ko-fi.com?i=2446A87JJ08CZ' target='_blank'>
+<img style='border:0px;width:100px;' src='https://az743702.vo.msecnd.net/cdn/btn1.png' border='0' alt='Buy me a coffee at ko-fi.com' />
+</a> 
+
