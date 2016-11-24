@@ -1,0 +1,46 @@
+.welcome {
+  background: url('../images/paper_fibers.png');
+  width: 100%;
+  padding: 4em 0;
+}
+
+.welcome--contain {
+  width: 90%;
+  max-width: 36em;
+  background: $c-white;
+  margin: 0 auto;
+  padding: 2em;
+  box-sizing: border-box;
+
+  h2 {
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.25em;
+    font-color: $c-warmGrey;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 30%;
+      margin-left: 35%;
+      height: 1em;
+      border-bottom: 1px solid $c-warmGrey--fade;
+    }
+  }
+
+  p {
+    font-family: $f-serif;
+    font-size: 0.875em;
+    color: $c-black;
+
+    @media ($bp-larger-than-phablet) {
+      text-align: center;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
