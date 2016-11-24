@@ -1,0 +1,34 @@
+.hero {
+  width: 100%;
+  height: 46em;
+  height: 100vh;
+  background: url('../images/EngagementShoot-0007.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.hero--headline {
+  text-align: center;
+  color: #fff;
+  font-family: $f-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding-top: calc(50vh - 4.5em); //center the words vertically
+  text-shadow: 0 0 0.75em rgba(0, 0, 0, 0.75);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  word-spacing: 999999px; //one word per line
+
+  @media ($bp-larger-than-phablet) {
+    font-size: 2em;
+  }
+
+  &:after, &:before{
+    content: '';
+    display: block;
+    width: 1em;
+    margin: 1em auto;
+    height: 0em;
+    border-bottom: 1px solid $c-white;
+  }
+}

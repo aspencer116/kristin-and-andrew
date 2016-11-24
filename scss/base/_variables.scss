@@ -17,8 +17,18 @@ $border-color: #bbb !default;
 $link-color: #1eaedb !default;
 $font-color: #222 !default;
 
+$c-white: #fff;
+$c-black: #0A0000;
+$c-blue: #73AFDD;
+$c-blue--fade: #91C0DD;
+$c-warmGrey: #827380;
+$c-warmGrey--fade: #D2C5D0;
+
+
 // Typography
-$font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family: "Poppins", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$f-serif: 'Abhaya Libre', 'Georgia', serif;
+$f-sans: "Poppins", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 //Grid Variables
 $container-width: 960px !default;

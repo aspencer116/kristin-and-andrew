@@ -197,26 +197,12 @@ th {
 * 12/9/2014
 * Sass Version by Seth Coelen https://github.com/whatsnewsaes
 */
-html {
-  font-size: 62.5%; }
-
 body {
   font-size: 1.5em;
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Poppins", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
-
-a {
-  color: #1eaedb; }
-  a:hover {
-    color: #1b9cc5; }
-
-hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
-  border-width: 0;
-  border-top: 1px solid #e1e1e1; }
 
 .u-full-width {
   width: 100%;
@@ -283,24 +269,6 @@ h6 {
 
 p {
   margin-top: 0; }
-
-.nav {
-  float: left; }
-
-.hero {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../images/Kristin and Andrew Engagement Shoot-0040.jpg");
-  background-size: cover; }
-
-.hero--headline {
-  text-align: center;
-  color: #fff;
-  font-family: 'Playfair Display SC', serif;
-  font-size: 3em;
-  padding-top: calc(50vh - 1.5em);
-  text-shadow: 0 0 0.5em black;
-  letter-spacing: 4px; }
 
 /* Modules */
 /*
@@ -645,3 +613,69 @@ ul,
 ol,
 form {
   margin-bottom: 2.5rem; }
+
+.hero {
+  width: 100%;
+  height: 46em;
+  height: 100vh;
+  background: url("../images/EngagementShoot-0007.jpg") no-repeat center center;
+  background-size: cover; }
+
+.hero--headline {
+  text-align: center;
+  color: #fff;
+  font-family: "Abhaya Libre", "Georgia", serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding-top: calc(50vh - 4.5em);
+  text-shadow: 0 0 0.75em rgba(0, 0, 0, 0.75);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  word-spacing: 999999px; }
+  @media (min-width: 550px) {
+    .hero--headline {
+      font-size: 2em; } }
+  .hero--headline:after, .hero--headline:before {
+    content: '';
+    display: block;
+    width: 1em;
+    margin: 1em auto;
+    height: 0em;
+    border-bottom: 1px solid #fff; }
+
+.welcome {
+  background: url("../images/paper_fibers.png");
+  width: 100%;
+  padding: 4em 0; }
+
+.welcome--contain {
+  width: 90%;
+  max-width: 36em;
+  background: #fff;
+  margin: 0 auto;
+  padding: 2em;
+  box-sizing: border-box; }
+  .welcome--contain h2 {
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.25em;
+    font-color: #827380; }
+    .welcome--contain h2:after {
+      content: '';
+      display: block;
+      width: 30%;
+      margin-left: 35%;
+      height: 1em;
+      border-bottom: 1px solid #D2C5D0; }
+  .welcome--contain p {
+    font-family: "Abhaya Libre", "Georgia", serif;
+    font-size: 0.875em;
+    color: #0A0000; }
+    @media (min-width: 550px) {
+      .welcome--contain p {
+        text-align: center; } }
+    .welcome--contain p:last-child {
+      margin-bottom: 0; }
