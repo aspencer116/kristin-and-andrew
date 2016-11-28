@@ -1,14 +1,7 @@
 .welcome {
-  background: url('../images/paper_fibers.png');
+  background: url('../images/paper_fibers.png'), $c-white;
   width: 100%;
   padding: 2em 0;
-
-  //allow fix position
-  position: relative;
-  z-index: 2;
-  box-shadow: 0 0 30em rgba(0, 0, 0, 0.8);
-  top: 30em;
-  top: 100vh;
 
   @media ($bp-larger-than-phablet) {
     padding: 6em 0;
@@ -29,7 +22,7 @@
     text-transform: uppercase;
     font-size: 1.5em;
     letter-spacing: 0.25em;
-    font-color: $c-warmGrey;
+    color: $c-warmGrey;
 
     &:after {
       content: '';

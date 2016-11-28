@@ -2,7 +2,7 @@
   width: 100%;
   height: 30em; //no vh backup
   height: 100vh;
-  background: url('../images/EngagementShoot-0007.jpg') no-repeat center center;
+  background: url('../images/EngagementShoot-0007.jpg') no-repeat center center, $c-warmGrey;
   background-size: cover;
 
   //fixed position on scroll
@@ -11,11 +11,21 @@
   left: 0;
 }
 
+.hero--after {
+  //allow fix position
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 30em rgba(0, 0, 0, 0.8);
+  top: 30em;
+  top: 100vh;
+}
+
 .hero--arrowDown {
   width: 6.25em; //100px
   width: 6.25;
   position: absolute;
   bottom: 4em;
+  left: 45%; //no cal function
   left: calc(50% - 3.125em);
 
   .hero--topLine {
