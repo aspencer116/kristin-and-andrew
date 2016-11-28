@@ -198,7 +198,7 @@ th {
 * Sass Version by Seth Coelen https://github.com/whatsnewsaes
 */
 body {
-  font-size: 1.5em;
+  font-size: 1em;
   line-height: 1.6;
   font-weight: 400;
   font-family: "Poppins", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -616,26 +616,64 @@ form {
 
 .hero {
   width: 100%;
-  height: 46em;
+  height: 30em;
   height: 100vh;
-  background: url("../images/EngagementShoot-0007.jpg") no-repeat center center;
-  background-size: cover; }
+  background: url("../images/EngagementShoot-0007.jpg") no-repeat center center, #827380;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.hero--after {
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 30em rgba(0, 0, 0, 0.8);
+  top: 30em;
+  top: 100vh; }
+
+.hero--arrowDown {
+  width: 6.25em;
+  width: 6.25;
+  position: absolute;
+  bottom: 4em;
+  left: 45%;
+  left: calc(50% - 3.125em); }
+  .hero--arrowDown .hero--topLine {
+    animation: arrowDown 2s infinite ease-in-out; }
+
+@keyframes arrowDown {
+  0%, 100% { }
+  50% {
+    transform: translateY(10px); } }
+
+.hero--container {
+  width: 10em;
+  margin: 0 auto;
+  display: block; }
+  @media (min-width: 550px) {
+    .hero--container {
+      width: 15em; } }
 
 .hero--headline {
   text-align: center;
   color: #fff;
   font-family: "Abhaya Libre", "Georgia", serif;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1.75em;
   line-height: 1.5em;
   padding-top: calc(50vh - 4.5em);
-  text-shadow: 0 0 0.75em rgba(0, 0, 0, 0.75);
+  text-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
   letter-spacing: 0.25em;
-  text-transform: uppercase;
-  word-spacing: 999999px; }
+  text-transform: uppercase; }
+  .hero--headline small {
+    font-family: "Poppins", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 60%;
+    letter-spacing: 0.5em; }
   @media (min-width: 550px) {
     .hero--headline {
-      font-size: 2em; } }
+      font-size: 2.5em; } }
   .hero--headline:after, .hero--headline:before {
     content: '';
     display: block;
@@ -645,24 +683,27 @@ form {
     border-bottom: 1px solid #fff; }
 
 .welcome {
-  background: url("../images/paper_fibers.png");
+  background: url("../images/paper_fibers.png"), #fff;
   width: 100%;
-  padding: 4em 0; }
+  padding: 2em 0; }
+  @media (min-width: 550px) {
+    .welcome {
+      padding: 6em 0; } }
 
 .welcome--contain {
   width: 90%;
-  max-width: 36em;
+  max-width: 50em;
   background: #fff;
   margin: 0 auto;
-  padding: 2em;
+  padding: 4em;
   box-sizing: border-box; }
   .welcome--contain h2 {
     text-align: center;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 1.5em;
     letter-spacing: 0.25em;
-    font-color: #827380; }
+    color: #827380; }
     .welcome--contain h2:after {
       content: '';
       display: block;
@@ -672,10 +713,49 @@ form {
       border-bottom: 1px solid #D2C5D0; }
   .welcome--contain p {
     font-family: "Abhaya Libre", "Georgia", serif;
-    font-size: 0.875em;
+    font-size: 1.125em;
     color: #0A0000; }
     @media (min-width: 550px) {
       .welcome--contain p {
         text-align: center; } }
     .welcome--contain p:last-child {
       margin-bottom: 0; }
+
+.details {
+  background: url("../images/Engagement Shoot-0029.jpg") no-repeat center center, #827380;
+  background-size: cover;
+  padding: 4em 0; }
+  .details h2 {
+    display: none; }
+
+.details--headline {
+  font-family: "Poppins", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 0.25em;
+  color: #fff;
+  text-shadow: 0 0 2em rgba(0, 0, 0, 0.5); }
+  .details--headline:after {
+    content: '';
+    display: block;
+    width: 1em;
+    margin-left: 48%;
+    margin-left: calc(50% - 0.5em);
+    height: 0.5em;
+    border-bottom: 1px solid #fff; }
+
+.details--location, .details--date {
+  font-family: "Abhaya Libre", "Georgia", serif;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  letter-spacing: 0.35em;
+  line-height: 2em;
+  color: #fff;
+  text-shadow: 0 0 1em black; }
+
+.details--date {
+  margin-bottom: 4em; }

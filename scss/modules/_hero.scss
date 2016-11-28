@@ -1,9 +1,56 @@
 .hero {
   width: 100%;
-  height: 46em;
+  height: 30em; //no vh backup
   height: 100vh;
-  background: url('../images/EngagementShoot-0007.jpg') no-repeat center center;
+  background: url('../images/EngagementShoot-0007.jpg') no-repeat center center, $c-warmGrey;
   background-size: cover;
+
+  //fixed position on scroll
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.hero--after {
+  //allow fix position
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 30em rgba(0, 0, 0, 0.8);
+  top: 30em;
+  top: 100vh;
+}
+
+.hero--arrowDown {
+  width: 6.25em; //100px
+  width: 6.25;
+  position: absolute;
+  bottom: 4em;
+  left: 45%; //no cal function
+  left: calc(50% - 3.125em);
+
+  .hero--topLine {
+    animation: arrowDown 2s infinite ease-in-out;
+  }
+
+  @keyframes arrowDown {
+    0%, 100% {
+
+    }
+
+    50% {
+      transform: translateY(10px);
+    }
+  }
+}
+
+.hero--container {
+  width: 10em; //240px
+  margin: 0 auto;
+  display: block;
+
+  @media ($bp-larger-than-phablet) {
+    width: 15em; //240px
+  }
 }
 
 .hero--headline {
@@ -11,16 +58,23 @@
   color: #fff;
   font-family: $f-serif;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1.75em;
   line-height: 1.5em;
   padding-top: calc(50vh - 4.5em); //center the words vertically
-  text-shadow: 0 0 0.75em rgba(0, 0, 0, 0.75);
+  text-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  word-spacing: 999999px; //one word per line
+
+  small {
+    font-family: $f-sans;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 60%;
+    letter-spacing: 0.5em;
+  }
 
   @media ($bp-larger-than-phablet) {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   &:after, &:before{

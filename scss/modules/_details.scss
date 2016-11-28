@@ -1,0 +1,48 @@
+.details {
+  background: url('../images/Engagement Shoot-0029.jpg')no-repeat center center, $c-warmGrey;
+  background-size: cover;
+  //background: rgba(0, 0, 0, 0.5);
+  padding: 4em 0;
+
+  h2 {
+    display: none;
+  }
+}
+
+.details--headline {
+  font-family: $f-sans;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 0.25em;
+  color: $c-white;
+  text-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
+
+  &:after {
+    content: '';
+    display: block;
+    width: 1em;
+    margin-left: 48%;
+    margin-left: calc(50% - 0.5em);
+    height: 0.5em;
+    border-bottom: 1px solid $c-white;
+  }
+}
+
+.details--location {
+  font-family: $f-serif;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  letter-spacing: 0.35em;
+  line-height: 2em;
+  color: $c-white;
+  text-shadow: 0 0 1em rgba(0, 0, 0, 1);
+}
+
+.details--date {
+  @extend .details--location;
+  margin-bottom: 4em;
+}
