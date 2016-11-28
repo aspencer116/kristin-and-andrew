@@ -6,21 +6,30 @@
   background-size: cover;
 }
 
+.hero--container {
+  width: 10em; //240px
+  margin: 0 auto;
+  display: block;
+
+  @media ($bp-larger-than-phablet) {
+    width: 15em; //240px
+  }
+}
+
 .hero--headline {
   text-align: center;
   color: #fff;
   font-family: $f-serif;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1.25em;
   line-height: 1.5em;
   padding-top: calc(50vh - 4.5em); //center the words vertically
   text-shadow: 0 0 0.75em rgba(0, 0, 0, 0.75);
-  letter-spacing: 0.25em;
+  letter-spacing: 0.45em;
   text-transform: uppercase;
-  word-spacing: 999999px; //one word per line
 
   @media ($bp-larger-than-phablet) {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
   &:after, &:before{

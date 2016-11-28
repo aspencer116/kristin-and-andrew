@@ -621,21 +621,28 @@ form {
   background: url("../images/EngagementShoot-0007.jpg") no-repeat center center;
   background-size: cover; }
 
+.hero--container {
+  width: 10em;
+  margin: 0 auto;
+  display: block; }
+  @media (min-width: 550px) {
+    .hero--container {
+      width: 15em; } }
+
 .hero--headline {
   text-align: center;
   color: #fff;
   font-family: "Abhaya Libre", "Georgia", serif;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1.25em;
   line-height: 1.5em;
   padding-top: calc(50vh - 4.5em);
   text-shadow: 0 0 0.75em rgba(0, 0, 0, 0.75);
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  word-spacing: 999999px; }
+  letter-spacing: 0.45em;
+  text-transform: uppercase; }
   @media (min-width: 550px) {
     .hero--headline {
-      font-size: 2em; } }
+      font-size: 1.8em; } }
   .hero--headline:after, .hero--headline:before {
     content: '';
     display: block;
