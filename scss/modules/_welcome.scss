@@ -17,12 +17,7 @@
   box-sizing: border-box;
 
   h2 {
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    letter-spacing: 0.25em;
-    color: $c-warmGrey;
+    @include header2;
 
     &:after {
       content: '';

@@ -198,7 +198,6 @@ th {
 * Sass Version by Seth Coelen https://github.com/whatsnewsaes
 */
 body {
-  font-size: 1em;
   line-height: 1.6;
   font-weight: 400;
   font-family: "Poppins", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -632,12 +631,16 @@ form {
   top: 100vh; }
 
 .hero--arrowDown {
-  width: 6.25em;
-  width: 6.25;
+  width: 5em;
   position: absolute;
-  bottom: 4em;
+  bottom: 6em;
   left: 45%;
-  left: calc(50% - 3.125em); }
+  left: calc(50% - 2.5em); }
+  @media (min-width: 550px) {
+    .hero--arrowDown {
+      bottom: 4em;
+      width: 6.25em;
+      left: calc(50% - 3.125em); } }
   .hero--arrowDown .hero--topLine {
     animation: arrowDown 2s infinite ease-in-out; }
 
@@ -659,10 +662,10 @@ form {
   color: #fff;
   font-family: "Abhaya Libre", "Georgia", serif;
   font-weight: 300;
-  font-size: 1.75em;
-  line-height: 1.5em;
+  font-size: 1.5em;
+  line-height: 1.125em;
   padding-top: calc(50vh - 4.5em);
-  text-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 1em rgba(0, 0, 0, 0.75);
   letter-spacing: 0.25em;
   text-transform: uppercase; }
   .hero--headline small {
@@ -671,6 +674,10 @@ form {
     text-transform: uppercase;
     font-size: 60%;
     letter-spacing: 0.5em; }
+  @media (min-width: 400px) {
+    .hero--headline {
+      font-size: 1.75em;
+      line-height: 1.5em; } }
   @media (min-width: 550px) {
     .hero--headline {
       font-size: 2.5em; } }
@@ -701,9 +708,12 @@ form {
     text-align: center;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 1.5em;
     letter-spacing: 0.25em;
-    color: #827380; }
+    color: #827380;
+    font-size: 1.25em; }
+    @media (min-width: 550px) {
+      .welcome--contain h2 {
+        font-size: 1.5em; } }
     .welcome--contain h2:after {
       content: '';
       display: block;
