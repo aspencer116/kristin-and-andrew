@@ -34,9 +34,19 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.25em;
   color: $c-warmGrey;
-  font-size: 1.25em;
+  font-size: 1.125em;
 
   @media ($bp-larger-than-phablet) {
     font-size: 1.5em;
+  }
+}
+
+@mixin p {
+  font-family: $f-serif;
+  font-size: 1em;
+  color: $c-black;
+
+  @media ($bp-larger-than-phablet) {
+    font-size: 1.125em;
   }
 }

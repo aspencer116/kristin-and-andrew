@@ -626,7 +626,7 @@ form {
 .hero--after {
   position: relative;
   z-index: 2;
-  box-shadow: 0 0 30em rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 30em #000;
   top: 30em;
   top: 100vh; }
 
@@ -702,15 +702,21 @@ form {
   max-width: 50em;
   background: #fff;
   margin: 0 auto;
-  padding: 4em;
+  padding: 2em;
   box-sizing: border-box; }
+  @media (min-width: 400px) {
+    .welcome--contain {
+      padding: 4em 2em; } }
+  @media (min-width: 550px) {
+    .welcome--contain {
+      padding: 4em; } }
   .welcome--contain h2 {
     text-align: center;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.25em;
     color: #827380;
-    font-size: 1.25em; }
+    font-size: 1.125em; }
     @media (min-width: 550px) {
       .welcome--contain h2 {
         font-size: 1.5em; } }
@@ -723,8 +729,11 @@ form {
       border-bottom: 1px solid #D2C5D0; }
   .welcome--contain p {
     font-family: "Abhaya Libre", "Georgia", serif;
-    font-size: 1.125em;
+    font-size: 1em;
     color: #0A0000; }
+    @media (min-width: 550px) {
+      .welcome--contain p {
+        font-size: 1.125em; } }
     @media (min-width: 550px) {
       .welcome--contain p {
         text-align: center; } }
@@ -739,14 +748,17 @@ form {
     display: none; }
 
 .details--headline {
-  font-family: "Poppins", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 1.5em;
   letter-spacing: 0.25em;
+  color: #827380;
+  font-size: 1.125em;
   color: #fff;
   text-shadow: 0 0 2em rgba(0, 0, 0, 0.5); }
+  @media (min-width: 550px) {
+    .details--headline {
+      font-size: 1.5em; } }
   .details--headline:after {
     content: '';
     display: block;
@@ -758,14 +770,18 @@ form {
 
 .details--location, .details--date {
   font-family: "Abhaya Libre", "Georgia", serif;
+  font-size: 1em;
+  color: #0A0000;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 1.25em;
   letter-spacing: 0.35em;
-  line-height: 2em;
+  line-height: 1.5em;
   color: #fff;
   text-shadow: 0 0 1em black; }
+  @media (min-width: 550px) {
+    .details--location, .details--date {
+      font-size: 1.125em; } }
 
 .details--date {
   margin-bottom: 4em; }
