@@ -24,6 +24,10 @@
     padding: 4em;
   }
 
+  @media ($bp-larger-than-tablet) {
+    padding: 6em;
+  }
+
   h2 {
     @include header2;
 

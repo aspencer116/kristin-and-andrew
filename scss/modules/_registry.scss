@@ -1,0 +1,90 @@
+.registry {
+  background-color: $c-white;
+  padding: 2em 5% 2em;
+
+  @media ($bp-larger-than-phablet) {
+    padding: 6em 0;
+  }
+
+  h2 {
+    @include header2;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 30%;
+      margin-left: 35%;
+      height: 1em;
+      border-bottom: 1px solid $c-warmGrey--fade;
+    }
+  }
+
+  p {
+    @include p;
+  }
+
+  .logo--row {
+    max-width: 15em;
+    margin: 2em auto;
+
+    @media ($bp-larger-than-phablet) {
+      max-width: 30em;
+      margin: 4em auto 2em;
+    }
+
+    @media ($bp-larger-than-tablet) {
+      max-width: 42em;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .logo {
+    width: 100%;
+    margin-bottom: 3em;
+
+    @media ($bp-larger-than-phablet) {
+      width: 30%;
+      margin-bottom: 0em;
+    }
+  }
+
+  .logo:hover {
+    .cls-1 {
+      fill: $c-warmGrey--fade;
+      transition: fill 250ms ease-in-out;
+    }
+  }
+
+  #amazon {
+    width: 60%;
+    margin-left: 20%;
+
+    @media ($bp-larger-than-phablet) {
+      width: 22%;
+      margin-left: 0%;
+      margin-bottom: 0.675em;
+    }
+  }
+
+  #target {
+    width: 35%;
+    margin-left: 32.5%;
+
+    @media ($bp-larger-than-phablet) {
+      width: 12%;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+  }
+
+  #travelers {
+
+    @media ($bp-larger-than-phablet) {
+      width: 34%;
+      padding-bottom: 1.5em;
+    }
+  }
+}

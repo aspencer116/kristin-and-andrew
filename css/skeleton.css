@@ -1,12 +1,3 @@
-/*
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/9/2014
-* Sass Version by Seth Coelen https://github.com/whatsnewsaes
-*/
 /* Base files. */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
@@ -270,15 +261,6 @@ p {
   margin-top: 0; }
 
 /* Modules */
-/*
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/9/2014
-* Sass Version by Seth Coelen https://github.com/whatsnewsaes
-*/
 .container {
   position: relative;
   width: 100%;
@@ -293,6 +275,13 @@ p {
   float: left;
   box-sizing: border-box; }
 
+.centered {
+  float: none;
+  display: block;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto; }
+
 @media (min-width: 400px) {
   .container {
     width: 85%;
@@ -301,9 +290,6 @@ p {
 @media (min-width: 550px) {
   .container {
     width: 80%; }
-  .column,
-  .columns {
-    margin-left: 4%; }
   .column:first-child,
   .columns:first-child {
     margin-left: 0; }
@@ -710,6 +696,9 @@ form {
   @media (min-width: 550px) {
     .welcome--contain {
       padding: 4em; } }
+  @media (min-width: 750px) {
+    .welcome--contain {
+      padding: 6em; } }
   .welcome--contain h2 {
     text-align: center;
     font-weight: 700;
@@ -755,7 +744,8 @@ form {
   color: #827380;
   font-size: 1.125em;
   color: #fff;
-  text-shadow: 0 0 2em rgba(0, 0, 0, 0.5); }
+  text-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
+  margin-bottom: 0.75em; }
   @media (min-width: 550px) {
     .details--headline {
       font-size: 1.5em; } }
@@ -785,3 +775,76 @@ form {
 
 .details--date {
   margin-bottom: 4em; }
+
+.registry {
+  background-color: #fff;
+  padding: 2em 5% 2em; }
+  @media (min-width: 550px) {
+    .registry {
+      padding: 6em 0; } }
+  .registry h2 {
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: #827380;
+    font-size: 1.125em; }
+    @media (min-width: 550px) {
+      .registry h2 {
+        font-size: 1.5em; } }
+    .registry h2:after {
+      content: '';
+      display: block;
+      width: 30%;
+      margin-left: 35%;
+      height: 1em;
+      border-bottom: 1px solid #D2C5D0; }
+  .registry p {
+    font-family: "Abhaya Libre", "Georgia", serif;
+    font-size: 1em;
+    color: #0A0000; }
+    @media (min-width: 550px) {
+      .registry p {
+        font-size: 1.125em; } }
+  .registry .logo--row {
+    max-width: 15em;
+    margin: 2em auto; }
+    @media (min-width: 550px) {
+      .registry .logo--row {
+        max-width: 30em;
+        margin: 4em auto 2em; } }
+    @media (min-width: 750px) {
+      .registry .logo--row {
+        max-width: 42em; } }
+    .registry .logo--row a {
+      text-decoration: none; }
+  .registry .logo {
+    width: 100%;
+    margin-bottom: 3em; }
+    @media (min-width: 550px) {
+      .registry .logo {
+        width: 30%;
+        margin-bottom: 0em; } }
+  .registry .logo:hover .cls-1 {
+    fill: #D2C5D0;
+    transition: fill 250ms ease-in-out; }
+  .registry #amazon {
+    width: 60%;
+    margin-left: 20%; }
+    @media (min-width: 550px) {
+      .registry #amazon {
+        width: 22%;
+        margin-left: 0%;
+        margin-bottom: 0.675em; } }
+  .registry #target {
+    width: 35%;
+    margin-left: 32.5%; }
+    @media (min-width: 550px) {
+      .registry #target {
+        width: 12%;
+        margin-left: 15%;
+        margin-right: 15%; } }
+  @media (min-width: 550px) {
+    .registry #travelers {
+      width: 34%;
+      padding-bottom: 1.5em; } }
