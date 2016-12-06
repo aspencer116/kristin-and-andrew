@@ -688,7 +688,7 @@ form {
   max-width: 50em;
   background: #fff;
   margin: 0 auto;
-  padding: 2em;
+  padding: 4em;
   box-sizing: border-box; }
   @media (min-width: 400px) {
     .welcome--contain {
