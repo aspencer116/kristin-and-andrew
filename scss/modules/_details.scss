@@ -1,8 +1,7 @@
 .details {
   background: url('../images/Engagement Shoot-0029.jpg')no-repeat center center, $c-warmGrey;
   background-size: cover;
-  //background: rgba(0, 0, 0, 0.5);
-  padding: 4em 0;
+  @include module-fullHeight;
 
   h2 {
     display: none;

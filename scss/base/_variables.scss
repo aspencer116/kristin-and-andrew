@@ -1,6 +1,3 @@
-// Variables
-//––––––––––––––––––––––––––––––––––––––––––––––––––
-
 // Breakpoints
 $bp-larger-than-mobile    : "min-width: 400px" !default;
 $bp-larger-than-phablet   : "min-width: 550px" !default;
@@ -40,3 +37,15 @@ $column-margin: 4% !default; // space between columns
 
 // Misc
 $global-radius: 4px !default;
+
+//Module padding
+@mixin module-fullHeight {
+  width: 100%;
+  padding: 4em;
+  height: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}

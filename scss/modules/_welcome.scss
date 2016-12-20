@@ -1,11 +1,9 @@
 .welcome {
   background: url('../images/paper_fibers.png'), $c-white;
-  width: 100%;
-  padding: 2em 0;
-
-  @media ($bp-larger-than-phablet) {
-    padding: 6em 0;
-  }
+  background: url('../images/dark_wood.png'), $c-black;
+  @include module-fullHeight;
+  border-top: 1px $c-warmGrey solid;
+  border-bottom: 1px $c-warmGrey solid;
 }
 
 .welcome--contain {
