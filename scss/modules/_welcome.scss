@@ -1,9 +1,9 @@
 .welcome {
-  background: url('../images/paper_fibers.png'), $c-white;
   background: url('../images/dark_wood.png'), $c-black;
-  @include module-fullHeight;
+  @include module-fullHeight; //use 100vh
   border-top: 1px $c-warmGrey solid;
   border-bottom: 1px $c-warmGrey solid;
+  position: relative;
 }
 
 .welcome--contain {
@@ -11,8 +11,11 @@
   max-width: 50em;
   background: $c-white;
   margin: 0 auto;
-  padding: 4em;
+  padding: 2em 1em;
   box-sizing: border-box;
+  border-bottom: 0.25em $c-blue solid;
+  position: relative;
+  z-index: 1;
 
   @media ($bp-larger-than-mobile) {
     padding: 4em 2em;
