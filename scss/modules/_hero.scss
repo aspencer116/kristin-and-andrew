@@ -35,6 +35,7 @@
 
   .hero--topLine {
     animation: arrowDown 2s infinite ease-in-out;
+    stroke-weight: 2px;
   }
 
   @keyframes arrowDown {
