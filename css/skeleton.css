@@ -676,26 +676,31 @@ form {
     border-bottom: 1px solid #fff; }
 
 .welcome {
-  background: url("../images/paper_fibers.png"), #fff;
   background: url("../images/dark_wood.png"), #0A0000;
   width: 100%;
-  padding: 4em;
+  padding: 4em 0;
   height: auto;
   height: 100vh;
+  min-height: 30em;
+
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   border-top: 1px #827380 solid;
-  border-bottom: 1px #827380 solid; }
+  border-bottom: 1px #827380 solid;
+  position: relative; }
 
 .welcome--contain {
   width: 90%;
   max-width: 50em;
   background: #fff;
   margin: 0 auto;
-  padding: 4em;
-  box-sizing: border-box; }
+  padding: 2em 1em;
+  box-sizing: border-box;
+  border-bottom: 0.25em #73AFDD solid;
+  position: relative;
+  z-index: 1; }
   @media (min-width: 400px) {
     .welcome--contain {
       padding: 4em 2em; } }
@@ -739,6 +744,7 @@ form {
   background: url("../images/Engagement Shoot-0029.jpg") no-repeat center center, #827380;
   background-size: cover;
   width: 100%;
+
   padding: 4em;
   height: auto;
   height: 100vh;
@@ -816,11 +822,13 @@ form {
     font-family: "Abhaya Libre", "Georgia", serif;
     font-size: 1em;
     color: #0A0000;
-    text-align: center;
     max-width: 40em; }
     @media (min-width: 550px) {
       .registry p {
         font-size: 1.125em; } }
+    @media (min-width: 550px) {
+      .registry p {
+        text-align: center; } }
   .registry .logo--row {
     max-width: 15em;
     margin: 4em auto 2em; }

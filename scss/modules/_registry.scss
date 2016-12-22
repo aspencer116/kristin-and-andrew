@@ -21,8 +21,11 @@
 
   p {
     @include p;
-    text-align: center;
     max-width: 40em;
+
+    @media ($bp-larger-than-phablet) {
+      text-align: center;
+    }
   }
 
   .logo--row {
