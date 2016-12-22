@@ -682,6 +682,7 @@ form {
   height: auto;
   height: 100vh;
   min-height: 30em;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -743,10 +744,10 @@ form {
   background: url("../images/Engagement Shoot-0029.jpg") no-repeat center center, #827380;
   background-size: cover;
   width: 100%;
-  padding: 4em 0;
+
+  padding: 4em;
   height: auto;
   height: 100vh;
-  min-height: 30em;
   display: flex;
   align-items: center;
   justify-content: center;
