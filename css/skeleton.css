@@ -628,7 +628,8 @@ form {
       width: 6.25em;
       left: calc(50% - 3.125em); } }
   .hero--arrowDown .hero--topLine {
-    animation: arrowDown 2s infinite ease-in-out; }
+    animation: arrowDown 2s infinite ease-in-out;
+    stroke-weight: 2px; }
 
 @keyframes arrowDown {
   0%, 100% { }
@@ -682,7 +683,6 @@ form {
   height: auto;
   height: 100vh;
   min-height: 30em;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -744,14 +744,15 @@ form {
   background: url("../images/Engagement Shoot-0029.jpg") no-repeat center center, #827380;
   background-size: cover;
   width: 100%;
-
-  padding: 4em;
+  padding: 4em 0;
   height: auto;
   height: 100vh;
+  min-height: 30em;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  position: relative; }
   .details h2 {
     display: none; }
 
@@ -763,7 +764,7 @@ form {
   color: #827380;
   font-size: 1.125em;
   color: #fff;
-  text-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
   margin-bottom: 0.75em; }
   @media (min-width: 550px) {
     .details--headline {
@@ -794,6 +795,17 @@ form {
 
 .details--date {
   margin-bottom: 4em; }
+
+.details--svg {
+  position: absolute;
+  display: none; }
+  @media (min-width: 550px) {
+    .details--svg {
+      display: inline;
+      margin-top: -8.5em;
+      margin-left: -6.6em; } }
+  .details--svg path {
+    fill: rgba(255, 255, 255, 0.4); }
 
 .registry {
   background-color: #fff;
