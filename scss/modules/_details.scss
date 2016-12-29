@@ -2,6 +2,7 @@
   background: url('../images/Engagement Shoot-0029.jpg')no-repeat center center, $c-warmGrey;
   background-size: cover;
   @include module-fullHeight;
+  position: relative;
 
   h2 {
     display: none;
@@ -11,7 +12,7 @@
 .details--headline {
   @include header2;
   color: $c-white;
-  text-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
   margin-bottom: 0.75em;
 
   &:after {
@@ -39,4 +40,19 @@
 .details--date {
   @extend .details--location;
   margin-bottom: 4em;
+}
+
+.details--svg {
+  position: absolute;
+  display: none;
+
+  @media ($bp-larger-than-phablet) {
+    display: inline;
+    margin-top: -8.5em;
+    margin-left: -6.6em;
+  }
+
+  & path {
+    fill: rgba(255, 255, 255, 0.4);
+  }
 }

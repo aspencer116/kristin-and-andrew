@@ -1,6 +1,3 @@
-// Typography
-//––––––––––––––––––––––––––––––––––––––––––––––––––
-
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
@@ -39,6 +36,15 @@ p {
   @media ($bp-larger-than-phablet) {
     font-size: 1.5em;
   }
+}
+
+@mixin header3 {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color: $c-warmGrey;
+  font-size: 0.625em;
 }
 
 @mixin p {
