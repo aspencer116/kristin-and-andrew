@@ -824,9 +824,10 @@ form {
     .registry h2:after {
       content: '';
       display: block;
-      width: 30%;
-      margin-left: 35%;
-      height: 1em;
+      width: 1em;
+      margin-left: 48%;
+      margin-left: calc(50% - 0.5em);
+      height: 0.5em;
       border-bottom: 1px solid #D2C5D0; }
   .registry p {
     font-family: "Abhaya Libre", "Georgia", serif;
@@ -881,6 +882,64 @@ form {
     .registry #travelers {
       width: 34%;
       padding-bottom: 1.5em; } }
+
+.photos {
+  padding: 0 0 4em;
+  background-color: #fff; }
+  .photos img {
+    background-color: #D2C5D0; }
+  .photos .row {
+    width: 88%;
+    max-width: 720px;
+    margin: 0 auto; }
+    @media (min-width: 860px) {
+      .photos .row {
+        width: 96%;
+        max-width: 1440px; } }
+  @media (min-width: 480px) {
+    .photos .framed-1 {
+      box-shadow: 0 0 0 1em #D2C5D0; } }
+  @media (min-width: 480px) {
+    .photos .framed-2 {
+      box-shadow: 0 0 0 1em #5C4A30; } }
+  @media (min-width: 480px) {
+    .photos .framed-3 {
+      box-shadow: 0 0 0 1em #282525; } }
+  @media (min-width: 480px) {
+    .photos .framed-4 {
+      box-shadow: 0 0 0 1em #CDAB89; } }
+
+.photos--img {
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 6% auto; }
+  @media (min-width: 860px) {
+    .photos--img {
+      width: 44%;
+      margin: 3% 3%; } }
+
+.photos--hero {
+  padding: 4em 0; }
+
+.photos--headline {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: #827380;
+  font-size: 1.125em; }
+  @media (min-width: 550px) {
+    .photos--headline {
+      font-size: 1.5em; } }
+  .photos--headline:after {
+    content: '';
+    display: block;
+    width: 1em;
+    margin-left: 48%;
+    margin-left: calc(50% - 0.5em);
+    height: 0.5em;
+    border-bottom: 1px solid #D2C5D0; }
 
 .footer {
   width: 100%;
