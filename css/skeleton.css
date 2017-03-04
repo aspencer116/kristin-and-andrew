@@ -188,12 +188,6 @@ th {
 * 12/9/2014
 * Sass Version by Seth Coelen https://github.com/whatsnewsaes
 */
-body {
-  line-height: 1.6;
-  font-weight: 400;
-  font-family: "Poppins", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
-
 .u-full-width {
   width: 100%;
   box-sizing: border-box; }
@@ -259,6 +253,15 @@ h6 {
 
 p {
   margin-top: 0; }
+
+.icon--birch1 {
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2em; }
+  @media (min-width: 550px) {
+    .icon--birch1 {
+      width: 40%; } }
 
 /* Modules */
 .container {
@@ -585,11 +588,65 @@ ol,
 form {
   margin-bottom: 2.5rem; }
 
+.header {
+  width: 100%;
+  height: 4em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3; }
+  .header--logo {
+    width: 4em;
+    height: 4em;
+    margin: 1em 0 0 1em;
+    display: block;
+    fill: #fff;
+    cursor: pointer;
+    float: left;
+    transition: fill 500ms ease; }
+    .header--logo:hover {
+      fill: #6D87A0; }
+  .header--nav {
+    float: right;
+    margin-top: 2.5em;
+    margin-right: 2em; }
+    .header--nav ul {
+      margin: 0; }
+  .header--navItem {
+    list-style: none;
+    display: inline;
+    margin-left: 2em; }
+    .header--navItem a {
+      text-align: center;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5em;
+      color: #0A0000;
+      font-size: 0.625em;
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.9375em;
+      letter-spacing: 0.375em;
+      cursor: pointer;
+      text-shadow: 0 0 1.5em rgba(0, 0, 0, 0.25);
+      position: relative; }
+      .header--navItem a:after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        top: 0;
+        left: 0;
+        margin-top: 1.75em;
+        border-bottom: 1px #fff solid;
+        transition: width 500ms ease; }
+      .header--navItem a:hover:after {
+        width: 100%; }
+
 .hero {
   width: 100%;
   height: 30em;
   height: 100vh;
-  background: url("../images/EngagementShoot-0007.jpg") no-repeat center center, #827380;
+  background: url("../images/the-moment_horiz_bnw.jpg") no-repeat center center, #827380;
   background-size: cover;
   position: fixed;
   top: 0;
@@ -597,6 +654,16 @@ form {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .hero::before {
+    width: 100%;
+    height: 30em;
+    height: 100vh;
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2); }
 
 .hero--after {
   position: relative;
@@ -610,7 +677,8 @@ form {
   position: absolute;
   bottom: 6em;
   left: 45%;
-  left: calc(50% - 2.5em); }
+  left: calc(50% - 2.5em);
+  z-index: 2; }
   @media (min-width: 550px) {
     .hero--arrowDown {
       bottom: 4em;
@@ -632,7 +700,7 @@ form {
   display: none;
   text-align: center;
   color: #fff;
-  font-family: "Abhaya Libre", "Georgia", serif;
+  font-family: "Sorts Mill Goudy", "Georgia", serif;
   font-weight: 300;
   font-size: 1.5em;
   line-height: 1.125em;
@@ -649,13 +717,24 @@ form {
     border-bottom: 1px solid #fff; }
 
 .hero--logo {
-  width: 50%;
+  width: 110%;
   fill: #fff;
   margin: 0 auto;
-  display: block; }
+  display: block;
+  position: relative;
+  z-index: 2; }
+  @media (min-width: 550px) {
+    .hero--logo {
+      width: 80%; } }
+  @media (min-width: 750px) {
+    .hero--logo {
+      width: 60%; } }
+  @media (min-width: 1600px) {
+    .hero--logo {
+      width: 60%; } }
 
 .welcome {
-  background: url("../images/dark_wood.png"), #0A0000;
+  background: url("../images/speckled-off-white.jpg"), #f5f5f5;
   width: 100%;
   padding: 4em 0;
   height: auto;
@@ -698,20 +777,15 @@ form {
     @media (min-width: 550px) {
       .welcome--contain h2 {
         font-size: 1.5em; } }
-    .welcome--contain h2:after {
-      content: '';
-      display: block;
-      width: 30%;
-      margin-left: 35%;
-      height: 1em;
-      border-bottom: 1px solid #D2C5D0; }
   .welcome--contain p {
-    font-family: "Abhaya Libre", "Georgia", serif;
-    font-size: 1em;
+    font-family: "Sorts Mill Goudy", "Georgia", serif;
+    letter-spacing: 0.0625em;
+    line-height: 2em;
+    font-size: 0.9375em;
     color: #0A0000; }
     @media (min-width: 550px) {
       .welcome--contain p {
-        font-size: 1.125em; } }
+        font-size: 1.0625em; } }
     @media (min-width: 550px) {
       .welcome--contain p {
         text-align: center; } }
@@ -757,8 +831,10 @@ form {
     border-bottom: 1px solid #fff; }
 
 .details--location, .details--date {
-  font-family: "Abhaya Libre", "Georgia", serif;
-  font-size: 1em;
+  font-family: "Sorts Mill Goudy", "Georgia", serif;
+  letter-spacing: 0.0625em;
+  line-height: 2em;
+  font-size: 0.9375em;
   color: #0A0000;
   text-align: center;
   font-weight: 700;
@@ -769,7 +845,7 @@ form {
   text-shadow: 0 0 1em black; }
   @media (min-width: 550px) {
     .details--location, .details--date {
-      font-size: 1.125em; } }
+      font-size: 1.0625em; } }
 
 .details--date {
   margin-bottom: 4em; }
@@ -786,7 +862,7 @@ form {
     fill: rgba(255, 255, 255, 0.4); }
 
 .registry {
-  background-color: #fff;
+  background: url("../images/speckled-off-white.jpg"), #fff;
   width: 100%;
   padding: 4em 0;
   height: auto;
@@ -822,13 +898,15 @@ form {
       height: 0.5em;
       border-bottom: 1px solid #D2C5D0; }
   .registry p {
-    font-family: "Abhaya Libre", "Georgia", serif;
-    font-size: 1em;
+    font-family: "Sorts Mill Goudy", "Georgia", serif;
+    letter-spacing: 0.0625em;
+    line-height: 2em;
+    font-size: 0.9375em;
     color: #0A0000;
     max-width: 40em; }
     @media (min-width: 550px) {
       .registry p {
-        font-size: 1.125em; } }
+        font-size: 1.0625em; } }
     @media (min-width: 550px) {
       .registry p {
         text-align: center; } }
@@ -844,16 +922,17 @@ form {
         max-width: 42em; } }
     .registry .logo--row a {
       text-decoration: none; }
-  .registry .logo {
+  .registry--logo {
     width: 100%;
     margin-bottom: 3em; }
+    .registry--logo .cls-1 {
+      transition: all 250ms cubic-bezier(0.75, 0, 0.5, 1); }
     @media (min-width: 550px) {
-      .registry .logo {
+      .registry--logo {
         width: 30%;
         margin-bottom: 0em; } }
-  .registry .logo:hover .cls-1 {
-    fill: #D2C5D0;
-    transition: fill 250ms ease-in-out; }
+    .registry--logo:hover .cls-1 {
+      fill: #6D87A0; }
   .registry #amazon {
     width: 60%;
     margin-left: 20%; }
@@ -876,7 +955,7 @@ form {
       padding-bottom: 1.5em; } }
 
 .photos {
-  padding: 0 0 4em;
+  padding: 4em 0;
   background-color: #fff; }
   .photos img {
     background-color: #D2C5D0; }
@@ -912,7 +991,12 @@ form {
       margin: 3% 3%; } }
 
 .photos--hero {
-  padding: 4em 0; }
+  padding: 6em 0;
+  background: url("../images/birch-2-15.jpg") no-repeat center center, #827380;
+  background-size: cover; }
+  @media (min-width: 550px) {
+    .photos--hero {
+      padding: 8em 0; } }
 
 .photos--headline {
   text-align: center;
@@ -920,7 +1004,9 @@ form {
   text-transform: uppercase;
   letter-spacing: 0.25em;
   color: #827380;
-  font-size: 1.125em; }
+  font-size: 1.125em;
+  color: #fff;
+  text-shadow: 0 0 1.5em black; }
   @media (min-width: 550px) {
     .photos--headline {
       font-size: 1.5em; } }
@@ -936,7 +1022,7 @@ form {
 .footer {
   width: 100%;
   padding: 4em 0;
-  background-color: #f5f5f5; }
+  background-color: #fff; }
   .footer--text {
     text-align: center;
     font-weight: 700;

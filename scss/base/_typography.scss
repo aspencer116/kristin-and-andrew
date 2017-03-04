@@ -49,10 +49,12 @@ p {
 
 @mixin p {
   font-family: $f-serif;
-  font-size: 1em;
+  letter-spacing: 0.0625em;
+  line-height: 2em;
+  font-size: 0.9375em;
   color: $c-black;
 
   @media ($bp-larger-than-phablet) {
-    font-size: 1.125em;
+    font-size: 1.0625em;
   }
 }

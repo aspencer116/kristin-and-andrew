@@ -1,5 +1,5 @@
 .photos {
-  padding: 0 0 4em;
+  padding: 4em 0;
   background-color: $c-white;
 
   img {
@@ -55,11 +55,19 @@
 }
 
 .photos--hero {
-  padding: 4em 0;
+  padding: 6em 0;
+  background: url('../images/birch-2-15.jpg') no-repeat center center, $c-warmGrey;
+  background-size: cover;
+
+  @media ($bp-larger-than-phablet) {
+    padding: 8em 0;
+  }
 }
 
 .photos--headline {
   @include header2;
+  color: $c-white;
+  text-shadow: 0 0 1.5em black;
 
   &:after {
     content: '';
