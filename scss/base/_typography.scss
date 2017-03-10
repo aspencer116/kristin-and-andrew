@@ -26,6 +26,7 @@ p {
 }
 
 @mixin header2 {
+  font-family: "Poppins", "Helvetica", sans-serif;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
@@ -39,6 +40,7 @@ p {
 }
 
 @mixin header3 {
+  font-family: "Poppins", "Helvetica", sans-serif;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;

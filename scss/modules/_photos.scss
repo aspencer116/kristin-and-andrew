@@ -55,19 +55,31 @@
 }
 
 .photos--hero {
-  padding: 6em 0;
+  padding: 8em 0;
   background: url('../images/birch-2-15.jpg') no-repeat center center, $c-warmGrey;
   background-size: cover;
 
   @media ($bp-larger-than-phablet) {
-    padding: 8em 0;
+    padding: 9em 0;
   }
 }
 
 .photos--headline {
-  @include header2;
+  font-family: $f-serif;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+  font-size: 2em;
   color: $c-white;
   text-shadow: 0 0 1.5em black;
+  @media ($bp-larger-than-phablet) {
+    font-size: 2.5em;
+    letter-spacing: 0.25em;
+  }
+  @media ($bp-larger-than-tablet) {
+    font-size: 3.25em;
+  }
 
   &:after {
     content: '';
