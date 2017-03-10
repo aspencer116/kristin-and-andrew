@@ -1,19 +1,18 @@
 .footer {
   width: 100%;
   padding: 4em 0;
-  background-color: $c-grey--light;
-}
+  background-color: $c-white;
 
-.footer--text {
-  @include header3;
-  text-align: center;
-  margin-bottom: 0;
-  line-height: 3em;
-  width: 90%;
-  margin: 0 auto;
+  &--text {
+    @include header3;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 3em;
+    width: 90%;
+    margin: 0 auto;
 
-  a {
-      color: lighten($c-warmGrey, 20%);
+    a {
+      color: $c-blue;
       text-decoration: none;
       position: relative;
 
@@ -35,5 +34,14 @@
           width: 100%;
         }
       }
+    }
+  }
+
+  &--icon {
+    width: 6em;
+    height: 6em;
+    margin: 0 auto;
+    display: block;
+    fill: $c-blue;
   }
 }

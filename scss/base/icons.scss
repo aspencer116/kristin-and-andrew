@@ -1,0 +1,10 @@
+.icon--birch1 {
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2em;
+
+  @media($bp-larger-than-phablet) {
+    width: 40%;
+  }
+}

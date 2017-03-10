@@ -2,13 +2,28 @@
   width: 100%;
   height: 30em; //no vh backup
   height: 100vh;
-  background: url('../images/EngagementShoot-0007.jpg') no-repeat center center, $c-warmGrey;
+  background: url('../images/the-moment_horiz_bnw.jpg') no-repeat center center, $c-warmGrey;
   background-size: cover;
 
   //fixed position on scroll
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    width: 100%;
+    height: 30em; //no vh backup
+    height: 100vh;
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
 }
 
 .hero--after {
@@ -26,6 +41,7 @@
   bottom: 6em;
   left: 45%; //no cal function
   left: calc(50% - 2.5em);
+  z-index: 2;
 
   @media ($bp-larger-than-phablet) {
     bottom: 4em;
@@ -50,16 +66,11 @@
 }
 
 .hero--container {
-  width: 10em; //240px
-  margin: 0 auto;
-  display: block;
-
-  @media ($bp-larger-than-phablet) {
-    width: 15em; //240px
-  }
+  width: 100%;
 }
 
 .hero--headline {
+  display: none;
   text-align: center;
   color: #fff;
   font-family: $f-serif;
@@ -71,23 +82,6 @@
   letter-spacing: 0.25em;
   text-transform: uppercase;
 
-  small {
-    font-family: $f-sans;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 60%;
-    letter-spacing: 0.5em;
-  }
-
-  @media ($bp-larger-than-mobile) {
-    font-size: 1.75em;
-    line-height: 1.5em;
-  }
-
-  @media ($bp-larger-than-phablet) {
-    font-size: 2.5em;
-  }
-
   &:after, &:before{
     content: '';
     display: block;
@@ -95,5 +89,26 @@
     margin: 1em auto;
     height: 0em;
     border-bottom: 1px solid $c-white;
+  }
+}
+
+.hero--logo {
+  width: 110%;
+  fill: $c-white;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  z-index: 2;
+
+  @media ($bp-larger-than-phablet) {
+    width: 80%;
+  }
+
+  @media ($bp-larger-than-tablet) {
+    width: 60%;
+  }
+
+  @media (min-width: 1600px) {
+    width: 60%;
   }
 }

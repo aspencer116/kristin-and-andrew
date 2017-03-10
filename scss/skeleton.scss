@@ -2,9 +2,9 @@
 @import "base/normalize";
 @import "base/variables";
 @import "base/functions";
-@import "base/base-styles";
 @import "base/utils";
 @import "base/typography";
+@import "base/icons";
 
 /* Modules */
 @import "modules/grid";
@@ -16,6 +16,7 @@
 @import "modules/media-queries";
 
 //Custom Modules
+@import "modules/nav";
 @import "modules/hero";
 @import "modules/welcome";
 @import "modules/details";

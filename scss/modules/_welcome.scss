@@ -1,5 +1,5 @@
 .welcome {
-  background: url('../images/dark_wood.png'), $c-black;
+  background: url('../images/speckled-off-white.jpg'), $c-grey--light;
   @include module-fullHeight; //use 100vh
   border-top: 1px $c-warmGrey solid;
   border-bottom: 1px $c-warmGrey solid;
@@ -31,15 +31,6 @@
 
   h2 {
     @include header2;
-
-    &:after {
-      content: '';
-      display: block;
-      width: 30%;
-      margin-left: 35%;
-      height: 1em;
-      border-bottom: 1px solid $c-warmGrey--fade;
-    }
   }
 
   p {
