@@ -1,0 +1,74 @@
+.hotels {
+  background: white;
+  @include module-fullHeight;
+  min-height: 45em;
+
+  @media ($bp-larger-than-phablet) {
+    min-height: 30em;
+  }
+
+  &--contain {
+    width: 90%;
+    margin: 0 auto;
+
+    h2 {
+      @include header2;
+
+      &:after {
+        content: '';
+        display: block;
+        width: 1em;
+        margin-left: 48%;
+        margin-left: calc(50% - 0.5em);
+        height: 0.5em;
+        border-bottom: 1px solid $c-warmGrey--fade;
+      }
+    }
+
+    h3 {
+      font-family: $f-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.125em;
+      font-size: 1.25em;
+      text-align: center;
+      margin-bottom: 0.5em;
+    }
+
+    li {
+      list-style: none;
+      display: block;
+      width: 33%;
+      float: left;
+    }
+
+    p {
+        @include p;
+        text-align: center;
+    }
+  }
+
+  &--phone {
+    text-align: center;
+
+    a {
+      @include p;
+      @include transition;
+      color: $c-warmGrey;
+
+      &:hover {
+        color: $c-blue;
+        cursor: pointer;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        width: 1em;
+        margin-left: 48%;
+        margin-left: calc(50% - 0.5em);
+        height: 0.5em;
+        border-bottom: 1px solid $c-warmGrey--fade;
+      }
+    }
+  }
+}

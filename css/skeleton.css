@@ -968,6 +968,90 @@ form {
   .details--svg path {
     fill: rgba(255, 255, 255, 0.4); }
 
+.hotels {
+  background: white;
+  width: 100%;
+  padding: 4em 0;
+  height: auto;
+  height: 100vh;
+  min-height: 30em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: 45em; }
+  @media (min-width: 550px) {
+    .hotels {
+      min-height: 30em; } }
+  .hotels--contain {
+    width: 90%;
+    margin: 0 auto; }
+    .hotels--contain h2 {
+      font-family: "Poppins", "Helvetica", sans-serif;
+      text-align: center;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      color: #827380;
+      font-size: 1.125em; }
+      @media (min-width: 550px) {
+        .hotels--contain h2 {
+          font-size: 1.5em; } }
+      .hotels--contain h2:after {
+        content: '';
+        display: block;
+        width: 1em;
+        margin-left: 48%;
+        margin-left: calc(50% - 0.5em);
+        height: 0.5em;
+        border-bottom: 1px solid #D2C5D0; }
+    .hotels--contain h3 {
+      font-family: "Sorts Mill Goudy", "Georgia", serif;
+      text-transform: uppercase;
+      letter-spacing: 0.125em;
+      font-size: 1.25em;
+      text-align: center;
+      margin-bottom: 0.5em; }
+    .hotels--contain li {
+      list-style: none;
+      display: block;
+      width: 33%;
+      float: left; }
+    .hotels--contain p {
+      font-family: "Sorts Mill Goudy", "Georgia", serif;
+      letter-spacing: 0.0625em;
+      line-height: 2em;
+      font-size: 0.9375em;
+      color: #0A0000;
+      text-align: center; }
+      @media (min-width: 550px) {
+        .hotels--contain p {
+          font-size: 1.0625em; } }
+  .hotels--phone {
+    text-align: center; }
+    .hotels--phone a {
+      font-family: "Sorts Mill Goudy", "Georgia", serif;
+      letter-spacing: 0.0625em;
+      line-height: 2em;
+      font-size: 0.9375em;
+      color: #0A0000;
+      transition: all 250ms cubic-bezier(0.75, 0, 0.5, 1);
+      color: #827380; }
+      @media (min-width: 550px) {
+        .hotels--phone a {
+          font-size: 1.0625em; } }
+      .hotels--phone a:hover {
+        color: #6D87A0;
+        cursor: pointer; }
+      .hotels--phone a:after {
+        content: '';
+        display: block;
+        width: 1em;
+        margin-left: 48%;
+        margin-left: calc(50% - 0.5em);
+        height: 0.5em;
+        border-bottom: 1px solid #D2C5D0; }
+
 .registry {
   background: url("../images/speckled-off-white.jpg"), #fff;
   width: 100%;
