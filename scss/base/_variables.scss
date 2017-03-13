@@ -51,3 +51,8 @@ $global-radius: 4px !default;
   justify-content: center;
   box-sizing: border-box;
 }
+
+//Transition
+@mixin transition {
+  transition: all 250ms cubic-bezier(0.75, 0, 0.5, 1);
+}
