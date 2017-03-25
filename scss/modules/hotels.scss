@@ -1,15 +1,40 @@
 .hotels {
-  background: white;
-  @include module-fullHeight;
-  min-height: 45em;
+  background: url('../images/NHwoods-8025_min.jpg')no-repeat center center, $c-warmGrey;
+  background-size: cover;
+  width: 100%;
+  padding: 4em 0;
+  height: auto;
+  height: 100vh;
+  min-height: 64em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 
-  @media ($bp-larger-than-phablet) {
-    min-height: 30em;
+  @media ($bp-larger-than-tablet) {
+    min-height: 45em;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: auto;
+    height: 100vh;
+    min-height: 64em;
+
+    @media ($bp-larger-than-tablet) {
+      min-height: 45em;
+    }
   }
 
   &--contain {
     width: 90%;
     margin: 0 auto;
+    z-index: 1;
 
     h2 {
       @include header2;
@@ -21,7 +46,7 @@
         margin-left: 48%;
         margin-left: calc(50% - 0.5em);
         height: 0.5em;
-        border-bottom: 1px solid $c-warmGrey--fade;
+        border-bottom: 1px solid $c-white;
       }
     }
 
@@ -39,6 +64,35 @@
       display: block;
       width: 100%;
       float: left;
+      box-sizing: border-box;
+      padding: 2em 1em;
+      background-color: $c-grey--light;
+      position: relative;
+      z-index: 1;
+
+      &:before,
+      &:after {
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+      }
+
+      &:before {
+        z-index: -1;
+        background: $c-white;
+      }
+
+      &:after {
+        top: 50%;
+        left: 18%;
+        right: 18%;
+        z-index: -2;
+        box-shadow: 0 0 7rem rgba(0,0,0,0.3);
+        transition: all 300ms ease;
+      }
 
       &:first-child {
         margin-top: 2em;
@@ -46,9 +100,12 @@
 
       @media ($bp-larger-than-tablet) {
         width: 33.3%;
+        width: calc(33.3% - 2em);
+        margin: 1em;
+        padding: 3em;
 
         &:first-child {
-          margin-top: 0;
+          margin-top: 1em;
         }
       }
     }
@@ -56,6 +113,7 @@
     p {
         @include p;
         text-align: center;
+        text-shadow: 0 0 2em white;
     }
   }
 
@@ -87,7 +145,7 @@
 
   &--web {
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 0;
 
     a {
       @include p;

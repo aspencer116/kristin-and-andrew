@@ -13,9 +13,32 @@
   margin: 0 auto;
   padding: 2em 1em;
   box-sizing: border-box;
-  border-bottom: 0.25em $c-blue solid;
   position: relative;
   z-index: 1;
+
+  &:before,
+  &:after {
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+
+  &:before {
+    z-index: -1;
+    background: $c-white;
+  }
+
+  &:after {
+    top: 50%;
+    left: 12%;
+    right: 12%;
+    z-index: -2;
+    box-shadow: 0 0 7rem rgba(0,0,0,0.4);
+    transition: all 300ms ease;
+  }
 
   @media ($bp-larger-than-mobile) {
     padding: 4em 2em;
