@@ -92,6 +92,7 @@
     list-style: none;
     display: block;
     margin-bottom: 2em;
+    transition-delay: 2000ms;
 
     a {
       @include header3;
